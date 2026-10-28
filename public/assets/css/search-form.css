@@ -1,0 +1,77 @@
+/* ==========================================================================
+   Search Form - Estilos Pastéis para o Formulário de Busca (Fundo Branco)
+   ========================================================================== */
+
+.search-form-container {
+    margin-bottom: 1.5rem;
+}
+
+/* Grupo de Entrada (Pico CSS role="group") */
+.search-form-container fieldset[role="group"] {
+    display: flex;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+    background-color: #ffffff;
+}
+
+/* Campo de Texto de Busca */
+.search-form-container input[type="text"] {
+    color: #2d3748 !important; /* Texto escuro bem legível no fundo branco */
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important; /* Borda cinza suave */
+    font-size: 0.9rem !important;
+    padding: 0.55rem 0.85rem !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Cor do texto do placeholder */
+.search-form-container input[type="text"]::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+}
+
+.search-form-container input[type="text"]:focus {
+    border-color: #81A392 !important; /* Verde Sálvia Pastel */
+    box-shadow: 0 0 0 3px rgba(129, 163, 146, 0.2) !important;
+}
+
+/* Botão do Formulário (Submit) com tom Verde Sálvia Pastel */
+.search-form-container button[type="submit"],
+.search-form-container input[type="submit"] {
+    background-color: #81A392 !important;
+    border-color: #81A392 !important;
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    padding: 0.55rem 1rem !important;
+    margin-bottom: 0 !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.4rem !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.search-form-container button[type="submit"]:hover,
+.search-form-container input[type="submit"]:hover {
+    background-color: #6e8f7f !important;
+    border-color: #6e8f7f !important;
+}
+
+/* Ícone de Lupa dentro do Botão */
+.search-btn-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    flex-shrink: 0;
+}

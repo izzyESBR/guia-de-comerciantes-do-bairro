@@ -1,0 +1,184 @@
+/* Grade responsiva para os cards */
+.merchant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+/* Estrutura principal do Card */
+.merchant-card {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid #81A392;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); /* Sombra extremamente suave */
+    background-color: var(--card-background-color, #ffffff);
+}
+
+/* 1. Barra de Categoria no Topo (Verde Sálvia Pastel) */
+.card-category-bar {
+    background-color: #81A392; 
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: lighter;
+    letter-spacing: 0.06em;
+    padding: 0.4rem 0.75rem;
+    width: 100%;
+}
+
+/* Espaçamento interno do conteúdo do card */
+.card-body {
+    padding: 1.25rem 1rem 0.75rem 1rem;
+    flex-grow: 1;
+}
+
+/* 2. Nome do Estabelecimento */
+.merchant-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+    color: #81A392;
+}
+
+/* 3. Subcategoria */
+.merchant-subtitle {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #565656;
+}
+
+/* 4. Descrição */
+.merchant-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    color: #565656;
+}
+
+/* Contatos discretos no corpo do card */
+.card-meta-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #81A392;
+    align-items: center;
+}
+
+.meta-contact-item {
+    font-size: 0.8rem;
+    color: #81A392;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Tamanho dos ícones discretos no corpo */
+.card-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #81A392; /* Cor exata desejada */
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    flex-shrink: 0;
+}
+
+/* 5. Rodapé do Card */
+.card-footer {
+    border-top: 1px solid var(--muted-border-color);
+    padding: 0.75rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* Botões de Ação de Contato (Quadrados e Centralizados) */
+.btn-contact {
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    text-decoration: none;
+    box-sizing: border-box;
+    vertical-align: middle;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-contact:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+/* Tamanho e reset do ícone dentro do botão */
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Mantém os ícones brancos */
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+}
+
+/* Botão do WhatsApp (Verde Menta Pastel) */
+.btn-whatsapp {
+    background-color: #62B085 !important;
+    border-color: #62B085 !important;
+}
+
+/* Botão do Instagram (Rosa Pastel Suave) */
+.btn-instagram {
+    background-color: #E28A9D !important;
+    border-color: #E28A9D !important;
+}
+
+/* Botão do Website (Azul Sereno Pastel) */
+.btn-url {
+    background-color: #70A2CA !important;
+    border-color: #70A2CA !important;
+}
+
+nav .tab-item {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 450px) {
+    .merchant-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .merchant-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.6rem;
+    }
+    nav .tab-item {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}

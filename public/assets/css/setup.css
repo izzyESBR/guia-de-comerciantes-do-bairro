@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 1rem;
+}
+.setup-container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+.setup-container h1 {
+    font-size: 1.35rem;
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+/* Botão estilizado com o Verde Sálvia Pastel */
+.btn-pastel-save {
+    background-color: #81A392 !important;
+    border-color: #81A392 !important;
+    color: #ffffff !important;
+    width: 100%;
+    font-weight: 600;
+}
+.btn-pastel-save:hover {
+    background-color: #6e8e7e !important;
+    border-color: #6e8e7e !important;
+}
+label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 0.3rem;
+}
+input {
+    margin-bottom: 1rem !important;
+    font-size: 0.9rem !important;
+}

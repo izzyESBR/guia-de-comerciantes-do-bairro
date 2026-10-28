@@ -1,0 +1,13 @@
+# Ignora todo o diretório de armazenamento local (banco, uploads, mídias)
+/storage/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Configurações de IDE e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

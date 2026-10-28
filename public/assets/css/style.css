@@ -1,0 +1,15 @@
+html {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #6e8f7f !important;
+}
+
+nav .green {
+    color: #81A392;
+    font-weight: bold;
+}
+nav .green:hover {
+    text-decoration: none;
+}

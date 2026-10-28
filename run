@@ -1,0 +1,31 @@
+#!/usr/bin/env php
+<?php
+// /run (na raiz do projeto)
+
+// Garante que só pode ser executado via CLI (terminal) por segurança
+if (php_sapi_name() !== 'cli') {
+    die("Acesso negado. Este script só pode ser executado via terminal.\n");
+}
+
+// 1. Verifica se foi passado ao menos 1 argumento ($argv[0] é o nome do script 'run')
+if (!isset($argv[1])) {
+    echo "Erro: Nenhum comando informado.\n";
+    echo "Uso correto: php run <nome-da-ferramenta>\n";
+    exit(1);
+}
+
+$command = $argv[1];
+
+// 2. Importa o paths.php para ter o mapeamento centralizado
+$paths = require __DIR__ . '/src/paths.php';
+
+// 3. Monta o caminho e verifica se o arquivo correspondente existe dentro de tools/
+$toolFile = $paths['dirs']['tools'] . '/' . $command . '.php';
+
+if (!file_exists($toolFile)) {
+    echo "Erro: A ferramenta '{$command}.php' não foi encontrada na pasta tools/.\n";
+    exit(1);
+}
+
+// 4. Importa/executa o arquivo da ferramenta solicitada
+require $toolFile;
