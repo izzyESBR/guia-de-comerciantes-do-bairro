@@ -120,6 +120,3 @@ $pageStyles = [
     'category-toc',
     'list-grid'
 ];
-
-// Chama a View
-require_once $paths['dirs']['pages'] . '/list.php';

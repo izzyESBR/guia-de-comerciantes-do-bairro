@@ -1,36 +1,22 @@
 <?php
 // src/views/pages/admin.php
 /** @var array $paths */
+/** @var string $page */
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <!-- Head -->
-    <?php require_once $paths['dirs']['partials'] . '/head.php'; ?>
-    <body>
+<main class="container" id="<?=  htmlspecialchars($page) ?>">
+    <h1>⚙️ Painel de Administração</h1>
+    <p style="color: #64748b; margin-bottom: 2rem;">Gerencie as configurações gerais e dados do diretório comercial.</p>
 
-        <!-- Inclui o cabeçalho padrão do site -->
-        <?php require_once $paths['dirs']['partials'] . '/header.php'; ?>
+    <!-- Formulário para Alterar o Nome do Site -->
+    <?php require_once $paths['dirs']['components'] . '/site-title-form.php'; ?>
 
-        <main class="admin-container">
-            <h1>⚙️ Painel de Administração</h1>
-            <p style="color: #64748b; margin-bottom: 2rem;">Gerencie as configurações gerais e dados do diretório comercial.</p>
-
-            <!-- Formulário para Alterar o Nome do Site -->
-            <?php require_once $paths['dirs']['components'] . '/site-title-form.php'; ?>
-
-            <!-- Formulário para Enviar Arquivo CSV -->
-            <?php require_once $paths['dirs']['components'] . '/import-csv-form.php'; ?>
-            
-            <!-- Formulário para Alterar a Senha -->
-            <?php require_once $paths['dirs']['components'] . '/password-form.php'; ?>
-            
-            <!-- Ação de Desligar / Sair da Conta (Logout) -->
-            <?php require_once $paths['dirs']['components'] . '/logout-form.php'; ?>
-            
-        </main>
-
-        <!-- Inclui o rodapé padrão do site -->
-        <?php require $paths['dirs']['partials'] . '/footer.php'; ?>
-
-    </body>
-</html>
+    <!-- Formulário para Enviar Arquivo CSV -->
+    <?php require_once $paths['dirs']['components'] . '/import-csv-form.php'; ?>
+    
+    <!-- Formulário para Alterar a Senha -->
+    <?php require_once $paths['dirs']['components'] . '/password-form.php'; ?>
+    
+    <!-- Ação de Desligar / Sair da Conta (Logout) -->
+    <?php require_once $paths['dirs']['components'] . '/logout-form.php'; ?>
+    
+</main>

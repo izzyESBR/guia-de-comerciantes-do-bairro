@@ -25,6 +25,3 @@ $pageStyles = [
     'style',
     'login'
 ];
-
-// Carrega a View da página de login
-require_once $paths['dirs']['pages'] . '/login.php';

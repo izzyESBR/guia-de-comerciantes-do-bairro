@@ -41,6 +41,7 @@ if (!array_key_exists($page, $allowedPages)) {
 
 // Carrega o handler correspondente automaticamente por convenção
 $handlerFile = $paths['dirs']['handlers'].'/'.$page.'.php';
+$pageFile  = $paths['dirs']['pages'].'/'.$page.'.php';
 if (file_exists($handlerFile)) {
     require_once $handlerFile;
 }

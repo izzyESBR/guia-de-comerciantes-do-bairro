@@ -1,7 +1,7 @@
 <?php
 // src/views/components/password-form.php
 ?>
-<section class="admin-section">
+<section>
     <h2>🔑 Alterar Senha de Administrador</h2>
     <form action="index.php?page=admin&action=update_password" method="POST">
         <label for="current_password">Senha Atual</label>

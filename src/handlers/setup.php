@@ -37,6 +37,3 @@ $pageStyles = [
     'style',
     'setup'
 ];
-
-// Carrega a View da página de setup
-require_once $paths['dirs']['pages'] . '/setup.php';

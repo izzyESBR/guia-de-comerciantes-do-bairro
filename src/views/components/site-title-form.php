@@ -1,7 +1,7 @@
 <?php
 // src/views/components/site-title-form.php
 ?>
-<section class="admin-section">
+<section>
     <h2>🌐 Alterar Título do Site</h2>
     <form action="index.php?page=admin&action=update_title" method="POST">
         <label for="homepage_title">Novo Título da Página</label>

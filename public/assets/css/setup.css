@@ -1,27 +1,25 @@
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f8fafc;
-    margin: 0;
-    padding: 1rem;
+main#setup {
+    max-width: 500px;
+    /* width: 100%; */
+    /* max-width: 400px; */
+    /* background: #ffffff; */
+    /* padding: 2rem; */
+    /* border-radius: 16px; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); */
+    /* border: 1px solid #e2e8f0; */
 }
-.setup-container {
-    width: 100%;
-    max-width: 400px;
-    background: #ffffff;
+main#setup article {
     padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-    border: 1px solid #e2e8f0;
+    background-color: #fff;
 }
-.setup-container h1 {
+main#setup h1 {
+    text-align: center;
     font-size: 1.35rem;
     text-align: center;
     color: #1e293b;
     margin-bottom: 1.5rem;
 }
+
 /* Botão estilizado com o Verde Sálvia Pastel */
 .btn-pastel-save {
     background-color: #81A392 !important;

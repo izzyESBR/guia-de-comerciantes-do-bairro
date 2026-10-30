@@ -163,6 +163,3 @@ $pageStyles = [
     'style',
     'admin'
 ];
-
-// Carrega a View da página administrativa
-require_once $paths['dirs']['pages'] . '/admin.php';
